@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costo de servicios</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/d932e1258b.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+        body {
+            background-color: #efefef;
+        }
+
+        #main {
+            background-color: #fff;
+            max-width: 800px;
+            border: 1px solid #999;
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 2px 2px 10px #bbb;
+            font-family: 'Roboto', sans-serif;
+            padding-top: 10px;
+        }
+
+        #main h1 {
+            font-size: 1.5rem;
+        }
+
+        #main h5 {
+            font-size: 1rem;
+        }
+
+        #main .text-small {
+            padding-left: 20px;
+            font-size: 85%;
+        }
+
+        #tabla-precios {
+            font-size: 85%;
+        }
+
+        #menu {
+            width: 100%;
+            margin: 0 auto;
+        }
+        
+        #menu a {
+            margin-right: 20px;
+            font-size: 11pt;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container" id="main">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Costo de servicios</h1>
+                <h5 class="text-center">ISC. Enrique Fadanelli</h5>
+                <hr>
+
+                <div class="text-center" id="menu">
+                    <a href="#software" class="btn btn-sm"><i class="fas fa-laptop-code"></i> Software</a>
+                    <a href="#configuraciones" class="btn btn-sm"><i class="fas fa-file-alt"></i> Configuraciones</a>
+                    <a href="#mantenimiento" class="btn btn-sm"><i class="fas fa-wrench"></i> Mantenimiento</a>
+                    <a href="#ensamblado" class="btn btn-sm"><i class="fas fa-tools"></i> Ensamblado</a>
+                    <a href="#redes" class="btn btn-sm"><i class="fas fa-network-wired"></i> Redes</a>
+                    <a href="#celulares" class="btn btn-sm"><i class="fas fa-mobile-alt"></i> Celulares</a>
+                    <a href="#cctv" class="btn btn-sm"><i class="fas fa-eye"></i> CCTV</a>
+                    <a href="#soporte" class="btn btn-sm"><i class="fas fa-headset"></i> Soporte</a>
+                    <a href="#paquetes" class="btn btn-sm text-info"><i class="fas fa-box-open"></i> Paquetes de servicios</a>
+                </div>
+
+                <br>
+
+                <div class="table-responsive">
+                <table class="table table-stripped table-sm table-bordered" id="tabla-precios">
+                    <tr>
+                        <th>Clave/Id</th>
+                        <th>Servicio</th>
+                        <th>Costo</th>
+                        <th>Comentarios</th>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="table-primary text-center" id="software">
+                            SOFTWARE
+                        </td>
+                    </tr>
+                    <tr><td>1</td><td>Instalación de Sistema Operativo</td><td> $300.00  </td><td> Instalación limpia, sin aplicaciónes.</td></tr>
+                    <tr><td>2</td><td>Instalación de Software Básico</td><td> $100.00  </td><td> Incluye: Google Chrome, Mozilla Firefox, Reproductor de videos, lector de PDF Nitro Pro, WinRar.</td></tr>
+                    <tr><td>3</td><td>Instalación de Antivirus</td><td> $150.00  </td><td> Antivirus básico, no incluye licencia.</td></tr>
+                    <tr><td>4</td><td>Instalación de Paquetería de Office</td><td> $200.00  </td><td> Office para estudiante: Word, Excel, PowerPoint, OneNote, Outlook y Publisher.</td></tr>
+                    <tr><td>5</td><td>Respaldo de información, por cada 50 gb o fracción. </td><td> $50.00  </td><td> La información se dejará en una carpeta del escritorio, Vea las consideraciones generales. <a href="#cond1">[1]</a></td></tr>
+                    <tr><td>6</td><td>Paquete especializado básico.</td><td> $150.00  </td><td> Camtasia Studio, Sony Vegas, Corel, Photoshop, Illustrator.  Costo por cada aplicación.</td></tr>
+                    <tr><td>7</td><td>Paquete especializado avanzado.</td><td> $250.00  </td><td> Software avanzado como AutoCad, SolidWorks, MatLab.  Costo por cada aplicación.</td></tr>
+                    <tr><td>8</td><td>Desinstalación de un programa</td><td> $50.00  </td><td> Eliminación por completo de un programa.</td></tr>
+                    <tr><td>9</td><td>Creación de partición en disco para datos</td><td> $150.00  </td><td> Costo por partición.</td></tr>
+                    <tr><td>10</td><td>Instalación de controladores</td><td> $150.00  </td><td> </td></tr>
+                    <tr><td>11</td><td>Sólo activación de sistema o paquetería</td><td> $150.00  </td><td> No incluye formato o instalación, solo se trae el equipo para activación, vea consideraciones generales.</td></tr>
+                    
+                    <tr>
+                        <td colspan="4" class="table-primary text-center" id="configuraciones">
+                            CONFIGURACIONES Y ARCHIVOS
+                        </td>
+                    </tr>
+
+                    <tr><td>12</td><td>Instalación de dispositivo externo: impresora, escáner, cámara web.</td><td> $150.00  </td><td> Costo por dispositivo.</td></tr>
+                    <tr><td>13</td><td>Eliminación de virus en PC</td><td> $250.00  </td><td>No hay responsabilidad por pérdida de archivos o activaciones piratas a la hora de eliminar un virus.</td></tr>
+                    <tr><td>14</td><td>Eliminación de virus USB</td><td> $100.00  </td><td>No hay responsabilidad por pérdida de archivos.</td></tr>
+                    <tr><td>15</td><td>Recuperación de archivos USB  de hasta 32 gb</td><td> $300.00  </td><td> Diagnóstico y posible recuperación, vea consideraciones generales.</td></tr>
+                    <tr><td>16</td><td>Recuperación de archivos Disco duro de hasta 1 tb</td><td> $700.00  </td><td> Diagnóstico y posible recuperación, vea consideraciones generales.</td></tr>
+                    <tr><td>17</td><td>Configuración inicial equipo nuevo</td><td> $100.00  </td><td> </td></tr>
+                    <tr><td>18</td><td>Configuración de cliente de correo</td><td> $100.00  </td><td> Outlook, thunderbird. Precio por cuenta.</td></tr>
+                    <tr><td>19</td><td>Configuración de maquina virtual</td><td> $200.00  </td><td> Instalación sobre virtualbox</td></tr>
+                    <tr><td>20</td><td>Restauración a un punto anterior</td><td> $150.00  </td><td> Depende si su equipo está configurado para guardar puntos de restauración.</td></tr>
+                    <tr><td>21</td><td>Configuración de firewall</td><td> $150.00  </td><td> Abrir o bloquear programas para acceso a la red.</td></tr>
+                    <tr><td>22</td><td>Grabado de disco o DVD con datos</td><td> $20.00  </td><td> No incluye disco.</td></tr>
+
+                    <tr>
+                        <td colspan="4" class="table-primary text-center" id="mantenimiento">
+                            MANTENIMIENTO
+                        </td>
+                    </tr>
+
+                    <tr><td>23</td><td>Limpieza interna laptop</td><td> $500.00  </td><td> </td></tr>
+                    <tr><td>24</td><td>Limpieza interna escritorio</td><td> $300.00  </td><td> </td></tr>
+                    <tr><td>25</td><td>Limpieza interna + cambio de pasta laptop</td><td> $600.00  </td><td> Uso de pasta de diamante Thermaltake</td></tr>
+                    <tr><td>26</td><td>Limpieza interna + cambio de pasta escritorio</td><td> $400.00  </td><td> Uso de pasta de diamante Thermaltake</td></tr>
+                    <tr><td>27</td><td>Instalación de componentes laptop: memorias, baterias internas, teclado, tarjeta de red</td><td> $250.00  </td><td> </td></tr>
+                    <tr><td>28</td><td>Instalación de componentes escritorio: memorias, tarjetas pci, gpu, lectoras de disco, ventiladores</td><td> $200.00  </td><td> </td></tr>
+                    <tr><td>29</td><td>Reemplazo de motherboard laptop</td><td> $600.00  </td><td> </td></tr>
+                    <tr><td>30</td><td>Reemplazo de motherboard escritorio</td><td> $500.00  </td><td> </td></tr>
+                    <tr><td>31</td><td>Reemplazo de fuente de poder, escritorio</td><td> $300.00  </td><td> </td></tr>
+                    <tr><td>32</td><td>Reemplazo de microprocesador, escritorio</td><td> $250.00  </td><td> </td></tr>
+                    <tr><td>33</td><td>Traslado de piezas a otro gabinete, escritorio</td><td> $800.00  </td><td> </td></tr>
+                    <tr><td>34</td><td>Cambio de bateria del BIOS.</td><td> $100.00  </td><td> Incluye la batería.</td></tr>
+                    <tr><td>35</td><td>Reemplazo de disco duro</td><td> $150.00  </td><td> No incluye la reinstalación de sistema y aplicaciones ni migración de información</td></tr>
+                    <tr><td>36</td><td>Reemplazo de display en laptop</td><td> $350.00  </td><td> </td></tr>
+                    <tr><td>37</td><td>Limpieza externa laptop</td><td> $50.00  </td><td> </td></tr>
+                    <tr><td>38</td><td>Instalación o reubicación de PC de escritorio con accesorios.</td><td> $100.00  </td><td> </td></tr>
+                    
+                    <tr>
+                        <td colspan="4" class="table-primary text-center" id="ensamblado">
+                            ENSAMBLADO DE EQUIPOS
+                        </td>
+                    </tr>
+
+                    <tr><td>39</td><td>Ensamblado PC Sencilla</td><td> $700.00  </td><td> PC Sencilla, el cliente compra las piezas. No se hace manejo de cableado estético.</td></tr>
+                    <tr><td>40</td><td>Ensamblado PC Gamer o Estación de trabajo</td><td> $1,500.00  </td><td> El cliente entrega piezas, se hace manejo estético de cableado, si el gabinete lo permite</td></tr>
+                    <tr><td>41</td><td>Ensamblado PC Avanzada con servicio completo.</td><td> $2,500.00  </td><td> Incluye chequeo de compatibilidad óptima, compra y recolección de partes, ensamblado. El cliente debe depositar el 100% del valor de las piezas antes de la compra, el servicio de ensamblado se paga al entregar, se le envian hasta 5 propuestas diferentes al cliente. La cotización se cobra aunque no se acepte el trabajo.</td></tr>
+
+                    <tr>
+                        <td colspan="4" class="table-primary text-center" id="redes">
+                            REDES
+                        </td>
+                    </tr>
+
+                    <tr><td>42</td><td>Reseteo y reconfiguración de router por contraseña olvidada.</td><td> $100.00  </td><td> </td></tr>
+                    <tr><td>43</td><td>Configuración de router (cambio de red y/o clave)</td><td> $50.00  </td><td> </td></tr>
+                    <tr><td>44</td><td>Configuración avanzada de router o módem.</td><td> $150.00  </td><td>Controles de ancho de banda, dhcp, rangos de ip, apertura de puertos, bloqueo por MAC.</td></tr>
+                    <tr><td>45</td><td>Configuración avanzada de router programable con calidad de servicio, priorización del tráfico, control de ancho de banda, bloqueo de usuarios</td><td> $800.00  </td><td> </td></tr>
+                    <tr><td>46</td><td>Configuración de puntos de acceso o repetidores, por unidad</td><td> $250.00  </td><td> </td></tr>
+                    <tr><td>47</td><td>Armado de cable de red, precio por metro, incluye cable y conectores CAT5E para interiores.</td><td> $15.00  </td><td> </td></tr>
+                    <tr><td>48</td><td>Instalación y configuración de red LAN pequeña, por equipo</td><td> $200.00  </td><td> </td></tr>
+                    <tr><td>49</td><td>Configuración de equipos de red: impresora o escaner compartido, nas, etc.</td><td> $200.00  </td><td> </td></tr>
+                    <tr><td>50</td><td>Configuración de equipos Ubiquiti</td><td> $350.00  </td><td> </td></tr>
+                    <tr><td>51</td><td>Configuración de modem Telmex para darle uso como enrutador, punto de acceso o repetidor.</td><td> $300.00  </td><td> </td></tr>
+                    <tr><td>52</td><td>Aprovisionamiento a modo puente en ONT de fibra Telmex</td><td> $800.00  </td><td> </td></tr>
+                    <tr><td>53</td><td>Configuración de Hotspot mikrotik sencilla</td><td> $800.00  </td><td> </td></tr>
+                    <tr><td>54</td><td>Configuración de Hotspot mikrotik personalizada con diseño y logotipos de su marca</td><td> $1,500.00  </td><td> </td></tr>
+                    <tr><td>55</td><td>Generación de 50 fichas descartables para Hotspot mikrotik</td><td> $150.00  </td><td> </td></tr>
+                    <tr><td>56</td><td>Instalación y configuración de punto de reventa de internet. 1 router controlador y hasta 3 aps.</td><td> $4,500.00  </td><td>No incluye costos de equipos o material.</td></tr>
+                    <tr><td>57</td><td>Instalación y configuración de enlace punto a punto, enviar internet o línea telefónica de su casa a otro lugar, con mástiles de hasta 9 metros.</td><td> $2,500.00  </td><td>No incluye costos de equipos o material.</td></tr>
+
+
+                    <tr>
+                        <td colspan="4" class="table-primary text-center" id="celulares">
+                            CELULARES
+                        </td>
+                    </tr>
+
+                    <tr><td>58</td><td>Formato a memoria micro SD</td><td> $50.00  </td><td> </td></tr>
+                    <tr><td>59</td><td>Debloqueo (Con pérdida de datos)</td><td> $300.00  </td><td> </td></tr>
+                    <tr><td>60</td><td>Instalación de App.</td><td> $20.00  </td><td> </td></tr>
+                    <tr><td>61</td><td>Creación y configuración de cuenta para celular.</td><td> $50.00  </td><td> </td></tr>
+                    <tr><td>62</td><td>Creación de cuenta de correo genérica</td><td> $30.00  </td><td> </td></tr>
+                    <tr><td>63</td><td>Reestablecer a fábrica con respaldo de galería y contactos.</td><td> $200.00  </td><td> </td></tr>
+                    <tr><td>64</td><td>Respaldo de todos los archivos de celular a memoria USB.</td><td> $100.00  </td><td> </td></tr>
+                    <tr><td>65</td><td>Respaldo y transferencia de contactos o mensajes sms a otro celular</td><td> $50.00  </td><td> </td></tr>
+
+                    <tr>
+                        <td colspan="4" class="table-primary text-center" id="cctv">
+                            CCTV
+                        </td>
+                    </tr>
+
+                    <tr><td>66</td><td>Instalación de kit 4 cámaras, kit comprado por el cliente, instalación sencilla.</td><td> $1,500.00  </td><td> </td></tr>
+                    <tr><td>67</td><td>Cambio de disco duro.</td><td> $200.00  </td><td> </td></tr>
+                    <tr><td>68</td><td>Descarga de grabaciones a USB o reproducción de video.</td><td> $200.00  </td><td> 1 hr. de asistencia.</td></tr>
+                    <tr><td>69</td><td>Configuración o Reseteo de DVR</td><td> $150.00  </td><td> </td></tr>
+                    <tr><td>70</td><td>Reemplazo de cámara, por unidad</td><td> $200.00  </td><td> </td></tr>
+                    <tr><td>71</td><td>Reemplazo de conectores, por cámara</td><td> $150.00  </td><td> </td></tr>
+                    <tr><td>72</td><td>Reemplazo de cableado, por unidad</td><td> $150.00  </td><td> </td></tr>
+                    <tr><td>73</td><td>Mantenimiento a cajas de registro, por caja.</td><td> $100.00  </td><td>Limpieza de polvo, encintado de conectores y sellado de caja.</td></tr>
+                    <tr><td>74</td><td>Reorganización de cableado DVR. O reconexión de cables.</td><td> $150.00  </td><td> </td></tr>
+                    <tr><td>75</td><td>Extensión o duplicación de pantallas.</td><td> $250.00  </td><td> </td></tr>
+
+
+                    <tr>
+                        <td colspan="4" class="table-primary text-center" id="soporte">
+                            SOPORTE
+                        </td>
+                    </tr>
+
+                    <tr><td>76</td><td>Atención por hora. Remoto via Anydesk</td><td> $200.00  </td><td> </td></tr>
+                    <tr><td>77</td><td>Atención por hora.</td><td> $250.00  </td><td> </td></tr>
+                    <tr><td>78</td><td>(Viaje de entrega o recolección / servicio a redes o cctv / soporte técnico ) a domicilio. Gastos de viaje por Km.</td><td> $15.00  </td><td>¿Por qué el precio?. Se cobra tiempo perdido del técnico por motivo del viaje, combustible, desgaste vehicular.</td></tr>
+
+
+                </table>
+                </div>
+
+                <hr>
+
+                <h5 id="paquetes">Paquetes de servicios:</h5>
+                <table class="table table-stripped table-sm table-bordered" id="tabla-precios">
+                    <tr>
+                        <th>Clave/Id</th>
+                        <th>Servicio</th>
+                        <th>Costo</th>
+                        <th>Comentarios</th>
+                    </tr>
+                    <tr>
+                        <td>PAQ-1</td>
+                        <td>Paquete formato completo</td>
+                        <td>$600.00 </td>
+                        <td>
+                            <ul>
+                                <li>Instalación de Windows. [Clave 1]</li>
+                                <li>Programas básicos. [Clave 2]</li>
+                                <li>Office [Clave 4]</li>
+                                <li>Respaldo de 50 Gb de información [Clave 5]</li>
+                                <li>Instalación de controladores [Clave 10]</li>
+                                <li class="text-success">Ahorras $200.00</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PAQ-2</td>
+                        <td>Paquete: Renueva tu PC! SSD 120GB</td>
+                        <td>$1300.00 </td>
+                        <td>
+                            <span class="badge badge-pill badge-secondary">MÍNIMO - 120 GB</span> <br> 
+                            <ul>
+                                <li>Reemplazo de tu disco duro antiguo por un SSD.</li>
+                                <li>Instalación de Windows. [Clave 1]</li>
+                                <li>Programas básicos. [Clave 2]</li>
+                                <li>Office [Clave 4]</li>
+                                <li>Respaldo de 50 Gb de información [Clave 5]</li>
+                                <li>Instalación de controladores [Clave 10]</li>
+                                <li class="text-primary">Incluye el costo del SSD nuevo. Kingston de 120 Gb</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PAQ-3</td>
+                        <td>Paquete: Renueva tu PC! SSD 240GB</td>
+                        <td>$1600.00 </td>
+                        <td>
+                            <span class="badge badge-pill badge-info">BÁSICO - 240 GB</span> <br> 
+                            <ul>
+                                <li>Reemplazo de tu disco duro antiguo por un SSD.</li>
+                                <li>Instalación de Windows. [Clave 1]</li>
+                                <li>Programas básicos. [Clave 2]</li>
+                                <li>Office [Clave 4]</li>
+                                <li>Respaldo de 50 Gb de información [Clave 5]</li>
+                                <li>Instalación de controladores [Clave 10]</li>
+                                <li class="text-primary">Incluye el costo del SSD nuevo. Kingston de 240 Gb</li>
+                                <li class="text-success">En la compra del paquete recibe un <b>30%</b> de descuento en el servicio de limpieza + cambio de pasta térmica.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PAQ-4</td>
+                        <td>Paquete: Renueva tu PC! SSD 480GB</td>
+                        <td>$2000.00 </td>
+                        <td>
+                            <span class="badge badge-pill badge-warning">INTERMEDIO - 480 GB</span> <br> 
+                            <ul>
+                                <li>Reemplazo de tu disco duro antiguo por un SSD.</li>
+                                <li>Instalación de Windows. [Clave 1]</li>
+                                <li>Programas básicos. [Clave 2]</li>
+                                <li>Office [Clave 4]</li>
+                                <li>Respaldo de 50 Gb de información [Clave 5]</li>
+                                <li>Instalación de controladores [Clave 10]</li>
+                                <li class="text-primary">Incluye el costo del SSD nuevo. Kingston de 480 Gb</li>
+                                <li class="text-success">En la compra del paquete recibe un <b>40%</b> de descuento en el servicio de limpieza + cambio de pasta térmica.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>PAQ-5</td>
+                        <td>Paquete: Renueva tu PC! SSD 960GB</td>
+                        <td>$3100.00 </td>
+                        <td>
+                            <span class="badge badge-pill badge-danger">PROFESIONAL - 960 GB</span> <br> 
+                            <ul>
+                                <li>Reemplazo de tu disco duro antiguo por un SSD.</li>
+                                <li>Instalación de Windows. [Clave 1]</li>
+                                <li>Programas básicos. [Clave 2]</li>
+                                <li>Office [Clave 4]</li>
+                                <li>Respaldo de 50 Gb de información [Clave 5]</li>
+                                <li>Instalación de controladores [Clave 10]</li>
+                                <li class="text-primary">Incluye el costo del SSD nuevo. Kingston de 960 Gb</li>
+                                <li class="text-success">En la compra del paquete recibe un <b>50%</b> de descuento en el servicio de limpieza + cambio de pasta térmica.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                <hr>
+                <p>Consideraciones generales:</p>
+                <ul class="text-small">
+                    <li class="text-danger">No hay garantía en productos <em>activados</em>. (Sin licencia).</li>
+                    <li>Garantía en instalaciones originales de 60 días.</li>
+                    <li>Precios en moneda nacional MXN.</li>
+                    <li>El cliente debe cubrir los costos de licencia en caso de requerir productos originales.</li>
+                    <li>Servicio a domicilio tiene un costo calculado por los kilómetros recorridos de ida y vuelta hasta su ubicación.</li>
+                    <li>Los costos listados son por servicio. No se incluye el valor de las piezas.</li>
+                    <li>Se enlistan los servicios más comunes. El costo puede variar según las condiciones de cada equipo.</li>
+                    <li>No hay garantía en daños por virus causados por el propietario.</li>
+                    <li>El técnico se deslinda de toda responsabilidad sobre la información que el equipo contenga. Es su responsabilidad remover toda información confidencial antes de entregar el equipo.</li>
+                    <li>En recuperación de archivos el cliente acepta que entiende cómo funciona el proceso. No hay garantía de que los archivos sean recuperables.</li>
+                </ul>
+
+                <ul class="text-small">
+                    <li id="cond1"><b>[1]</b>. En respaldo de información solo se respaldarán carpetas comunes: Escritorio, Documentos, Descargas, Imágenes, Música y Videos. Indicar en caso de requerir respaldar alguna otra ruta. No es responsabilidad del técnico la pérdida de información. No se respaldarán licencias ni configuraciones.</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
